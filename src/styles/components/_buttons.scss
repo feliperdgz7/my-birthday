@@ -1,0 +1,24 @@
+@use '../variables';
+
+.button{
+    padding: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    &--primary{
+        color: variables.$corText;
+        background-color: variables.$color3;
+    }
+    @media(max-width:640px){
+        display: block;
+        width: 100%;
+        font-size: 24px;
+    }
+    @media (max-width:1024px){
+        display: flex;
+        align-items: center;
+    }
+}
